@@ -1,0 +1,31 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "learning",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "start": "node build/index.js",
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juancamilocorralesosvath/node_express_typescript.git"
+  },
+  "author": "juan camilo corrales osvath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juancamilocorralesosvath/node_express_typescript/issues"
+  },
+  "homepage": "https://github.com/juancamilocorralesosvath/node_express_typescript#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "express": "5.1.0"
+  }
+}

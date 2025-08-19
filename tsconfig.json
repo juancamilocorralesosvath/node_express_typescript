@@ -1,0 +1,33 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    // "rootDir": "./src",
+    "module": "ESNext",           // Usamos ESNext para compatibilidad con módulos ES
+    "target": "ESNext",           // O puedes usar "ES6"
+    "moduleResolution": "node",   // Resuelve módulos con el sistema Node.js
+    "esModuleInterop": true,      // Habilita la interoperabilidad entre ES y CommonJS
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,         // A veces ayuda con problemas de tipos
+    "strict": true,               // Habilitar modo estricto de TypeScript
+    "sourceMap": true,            // Mapas de fuentes para debugging
+    "outDir": "./build",
+
+    // Style Options
+    "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+   
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+  
+  }
+}
