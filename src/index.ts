@@ -6,7 +6,7 @@ const PORT = 3000
 
 app.get('/ping', (_req, res) => {
 
-    console.log('un ping!' + new Date().toLocaleDateString());
+    console.log('un ping!' );
 
     res.send('pong')
 })

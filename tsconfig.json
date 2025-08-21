@@ -2,9 +2,9 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    // "rootDir": "./src",
-    "module": "ESNext",           // Usamos ESNext para compatibilidad con módulos ES
-    "target": "ESNext",           // O puedes usar "ES6"
+    "rootDir": "./src",
+    "module": "commonjs",           // Usamos ESNext para compatibilidad con módulos ES
+    "target": "ES2020",           // O puedes usar "ES6"
     "moduleResolution": "node",   // Resuelve módulos con el sistema Node.js
     "esModuleInterop": true,      // Habilita la interoperabilidad entre ES y CommonJS
     "allowSyntheticDefaultImports": true,
@@ -24,7 +24,7 @@
     // Recommended Options
    
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
