@@ -29,3 +29,7 @@ export interface NonSensitiveInfoDiaryEntry {
 // export type NonSensitiveInfoDiaryEntry = Pick<DiaryEntry, 'id' | 'date' | 'weather' | 'visibility'>
 
 export type NonSensitiveInfoDiaryEntry = Omit<DiaryEntry, 'comment'>
+// intentar mover siempre objetos con contrato
+// intentar reutilizar 
+// no crear nuevos contratos para cada parametro
+export type NewDiaryEntry = Omit<DiaryEntry, 'id'>
