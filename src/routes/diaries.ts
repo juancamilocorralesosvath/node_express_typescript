@@ -24,15 +24,15 @@ router.get('/:id', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-  const { date, weather, visibility, comment } = req.body
+  try {
+    const newDiaryEntry = toNewDiaryEntry(req.body)
 
-  const newDiaryEntry = diaryServices.addDiary({
-    date,
-    weather,
-    visibility,
-    comment
-  })
-  res.json(newDiaryEntry)
+    const addedDiaryEntry = diaryServices.addDiary(newDiaryEntry)
+    res.json(addedDiaryEntry)
+  } catch (e: unknown) {
+    const message = e instanceof Error ? e.message : 'Unknown error occurred'
+    res.status(400).send(message)
+  }
 })
 
 export default router
